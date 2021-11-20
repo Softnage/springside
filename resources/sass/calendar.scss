@@ -1,0 +1,73 @@
+@import "./variables";
+@import "./base";
+
+.page-content p {
+	font-size: 14px;
+}
+
+
+.calendion {
+	margin: 0 0 15px 0;
+	border: solid 1px #ccc;
+
+	> label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		width: 100%;
+
+		.calendion-label {
+			flex: 1;
+			font-size: 15px;
+			cursor: pointer;
+			display: block;
+			margin: 0;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		> i {
+			font-style: normal;
+			margin: 0 0 0 auto;
+
+			&::after {
+				content: "\f055";
+				font-family: "Font Awesome 5 Free";
+				font-weight: 600;
+				font-size: 17px;
+			}
+		}
+
+		input[type='checkbox'] {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+
+			&:checked {
+				& ~ .calendion-content {
+					max-height: 1000px;
+				}
+
+				& ~ i::after {
+					content: "\f056";
+				}
+			}
+		}
+
+		.calendion-content {
+			flex-basis: 100%;
+			height: auto;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height ease 1s;
+
+			table {
+				td {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+}

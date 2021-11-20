@@ -1,0 +1,14 @@
+@import "./utilities";
+
+// @import "./css/assets.css";
+@import "./css/typography.css";
+@import "./css/shortcodes/shortcodes.css";
+@import "./css/style.css";
+@import "./css/color/color-1.css";
+
+
+#root, body {
+	@include font-1;
+	width: calc(100vw - (100vw - 100%));
+	overflow-x: hidden;
+}

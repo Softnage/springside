@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.clr-1 {
+	color: $clr-1;
+}
+.clr-2 {
+	color: $clr-2;
+}
+.clr-3 {
+	color: $clr-3;
+}
+
+.bg-1 {
+	background-color: $clr-1;
+}
+.bg-2 {
+	background-color: $clr-2;
+}
+.bg-3 {
+	background-color: $clr-3;
+}
+
+.font-1 {
+	@include font-1;
+}
+.font-2 {
+	@include font-2;
+}
+
+.text-bg-1 {
+	background-image: url('/images/uniform1.jpg');
+	background-clip: text;
+	color: transparent;
+}
+
+.btn {
+	color: #fff;
+}
+
+.dbg {
+	@include dbg(red);
+}

@@ -1,0 +1,48 @@
+// VARIABLES
+
+// Colors
+$clr-1: #135597;
+$clr-2: #f7b205;
+$clr-3: #37425c;
+$light-blue-bg: #f3fcfd;
+
+// Responsive Breakpoints
+$mobile: "max-width:767px";
+$tablet: "max-width:1300px";
+$desktop: "min-width:1300px";
+
+
+
+
+// MIXINS
+
+// Fonts
+@mixin font-1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+@mixin font-2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+}
+
+@mixin font-3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+}
+
+
+// Backgrounds
+@mixin bg1 {
+	background: $clr-1;
+}
+@mixin bg2 {
+	background: $clr-2;
+}
+
+
+// Utilities
+@mixin dbg ($color) {
+	border: solid $color 2px;
+}

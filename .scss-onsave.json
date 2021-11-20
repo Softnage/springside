@@ -1,0 +1,10 @@
+{
+	"inputDir": "resources/sass/",
+	"outputDir": "public/css/",
+	"useNpmSass": true,
+	"style":"compressed",
+	"sourcemap":"absolute",
+	"showStartup":true,
+	"showOutput":true,
+	"showError":true
+}

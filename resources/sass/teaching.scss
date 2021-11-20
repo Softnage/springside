@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./base";
+
+.page-content p {
+	font-size: 14px;
+}
+
+.teaching-intro {
+	&-right {
+
+		.quote-by {
+			@include bg1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 280px;
+			padding: 15px;
+			transform: translate(10px, 10px);
+
+			p {
+				color: #fff;
+				margin: 0;
+			}
+		}
+	}
+}
