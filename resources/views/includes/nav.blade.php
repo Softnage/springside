@@ -69,7 +69,7 @@
 						</a>
 					</div>
 					<ul class="nav navbar-nav">
-						<li class="@if(Request::is(route('home'))) active @endif">
+						<li class="@if(Request::is('home')) active @endif">
 							<a href="{{ route('home') }}">Home</a>
 						</li>
 						<li class="add-mega-menu @if(in_array(Request::fullUrl(), [
