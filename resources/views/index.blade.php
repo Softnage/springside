@@ -66,7 +66,7 @@
 							<h2 class="m-b10 font-2">
 								Welcome to
 								<br />
-								<span class="text-bg-1">Spring Side Academy</span>
+								<span class="clr-1">Spring Side Academy</span>
 							</h2>
 							<h5 class="fw4">It is a long established fact that a reade.</h5>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -143,7 +143,7 @@
 
 
 
-			{{-- Popular Courses --}}
+			{{-- Academics --}}
 			<div class="section-area section-sp2 popular-courses-bx">
 				<div class="container">
 					<div class="row">
@@ -202,7 +202,7 @@
 					</div>
 				</div>
 			</div>
-			{{-- Popular Courses END --}}
+			{{-- Academics END --}}
 
 			{{-- Extra Curricula --}}
 			<div class="section-area section-sp2 home-extra-curricula">
@@ -233,7 +233,8 @@
 					</div>
 				</div>
 				<div class="home-extra-curricula-right">
-					<div class="row">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0093941035057!2d-1.6253296857144353!3d6.6457539951945845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb913bfadaeb6b%3A0xfa401b75304550f6!2sSpring%20Side%20Academy!5e0!3m2!1sen!2sgh!4v1637167617199!5m2!1sen!2sgh" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					{{-- <div class="row">
 						<div class="col-12" style="margin-bottom:2px;">
 							<div class="row">
 								<div class="col-12">
@@ -251,7 +252,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 			{{-- Extra Curricula END --}}
