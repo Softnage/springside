@@ -94,7 +94,7 @@
 									</ul>
 								</li>
 								<li class="add-menu-right">
-									<img src="{{ asset('images/nav/about.jpg') }}" alt=""/>
+									<img class='img-thumbnail' src="{{ asset('images/nav/about.jpg') }}" alt=""/>
 								</li>
 							</ul>
 						</li>
@@ -117,7 +117,7 @@
 									</ul>
 								</li>
 								<li class="add-menu-right">
-									<img src="{{ asset('images/nav/admissions.jpg') }}" alt=""/>
+									<img class='img-thumbnail' src="{{ asset('images/nav/admissions.jpg') }}" alt=""/>
 								</li>
 							</ul>
 						</li>
@@ -139,7 +139,7 @@
 									</ul>
 								</li>
 								<li class="add-menu-right">
-									<img src="{{ asset('images/nav/academics.jpg') }}" alt=""/>
+									<img class='img-thumbnail' src="{{ asset('images/nav/academics.jpg') }}" alt=""/>
 								</li>
 							</ul>
 						</li>
