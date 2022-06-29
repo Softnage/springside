@@ -37,13 +37,18 @@ Route::prefix('admissions')->group(function() {
 		return view('fees');
 	});
 
-		Route::name('admission_procedure')->get('/admission-procedure', function() {
-			return view('admission_procedure');
-		});
+	Route::name('admission_procedure')->get('/admission-procedure', function() {
+		return view('admission_procedure');
+	});
 
-			Route::name('admission_policy')->get('/admission-policy', function() {
-				return view('admission_policy');
-			});
+	Route::name('admission_policy')->get('/admission-policy', function() {
+		return view('admission_policy');
+	});
+
+	Route::name('online_application')->get('/online-application', function() {
+		return view('online_application');
+	});
+	Route::name('online_application.submit')->post('/online-application', 'MailController@onlineApplication');
 });
 
 Route::prefix('our-setup')->group(function() {
@@ -70,24 +75,24 @@ Route::prefix('academics')->group(function() {
 		return view('creche');
 	});
 
-	Route::name('academics.lower_primary')->get('/lower-primary', function() {
-		return view('lower-primary');
+	Route::name('academics.primary')->get('/primary', function() {
+		return view('primary');
 	});
 
-	Route::name('academics.upper_primary')->get('/upper-primary', function() {
-		return view('upper-primary');
-	});
+	// Route::name('academics.upper_primary')->get('/upper-primary', function() {
+		// 	return view('upper-primary');
+		// });
+		//
+		// Route::name('academics.jhs')->get('/jhs', function() {
+			// 	return view('jhs');
+			// });
+		});
 
-	Route::name('academics.jhs')->get('/jhs', function() {
-		return view('jhs');
-	});
-});
-
-Route::name('contact')->get('/contact', function() {
-	return view('contact');
-});
+		Route::name('contact')->get('/contact', function() {
+			return view('contact');
+		});
 
 
-// just gonna leave this here instead of api.php
-// just so it doesn't get too lonely or forgotten
-Route::name('contact.send_email')->post('send-mail', 'MailController@sendMail');
+		// just gonna leave this here instead of api.php
+		// just so it doesn't get too lonely or forgotten
+		Route::name('contact.send_email')->post('send-mail', 'MailController@sendMail');

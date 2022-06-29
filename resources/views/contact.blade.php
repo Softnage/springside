@@ -2,7 +2,8 @@
 
 @section('page_head')
 	{!! seo([
-		'title' => "Contact Us | " . content('app.name')
+		'title' => "Contact Us | " . content('app.name'),
+		'description' => "Contact us on ". content('app.primary_phone') ." or send us an e-mail on " . content('app.contact_email')
 		]) !!}
 
 	{{-- <link href="https://unpkg.com/pattern.css" rel="stylesheet" /> --}}
@@ -12,7 +13,7 @@
 @section('page_content')
 	<div class="page-content bg-white">
 		<!-- inner page banner -->
-		<div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner3.jpg);">
+		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
 					<h1 class="text-white">Contact Us</h1>

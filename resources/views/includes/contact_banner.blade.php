@@ -1,6 +1,9 @@
 <div class="bg-primary text-white contact-info-bx">
 	<h2 class="m-b10 title-head font-2">Contact <span>Information</span></h2>
-	<p style="font-size:14px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<p style="font-size:14px;">
+		Send us a quick mail or contact us directy using any of the methods/sources
+		below.
+	</p>
 	<div class="widget widget_getintuch">
 		<ul>
 			<li style="font-size:14px;">
@@ -10,7 +13,10 @@
 				<a style='color:#fff;' href="tel:{{ content('app.primary_phone') }}"><i class="fas fa-phone"></i>{{ content('app.primary_phone') }}</a>
 			</li>
 			<li style="font-size:14px;">
-				<a style='color:#fff;' href="mailto:{{ content('app.contact_email') }}"><i class="fas fa-envelope-email"></i>{{ content('app.contact_email') }}</a>
+				<a style='color:#fff;' href="tel:{{ content('app.secondary_phone') }}"><i class="fas fa-phone"></i>{{ content('app.secondary_phone') }}</a>
+			</li>
+			<li style="font-size:14px;">
+				<a style='color:#fff;' href="mailto:{{ content('app.contact_email') }}"><i class="fas fa-envelope-open"></i>{{ content('app.contact_email') }}</a>
 			</li>
 		</ul>
 	</div>

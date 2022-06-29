@@ -1,4 +1,4 @@
-<header class="header rs-nav @if (Request::is(route('home'))) header-transparent @endif">
+<header class="header rs-nav">
 	<div class="top-bar">
 		<div class="container">
 			<div class="row d-flex justify-content-between">
@@ -20,7 +20,7 @@
 								<option data-icon="flag flag-us">English US</option>
 							</select>
 						</li> --}}
-						<li><a href="tel:{{ content('app.primary_phone') }}">Admission Enquiries: {{ content('app.primary_phone') }}</a></li>
+						<li><a href="tel:{{ content('app.admissions_phone') }}">Admission Enquiries: {{ content('app.admissions_phone') }}</a></li>
 					</ul>
 				</div>
 			</div>
@@ -110,7 +110,8 @@
 									<ul>
 										<li><a href="{{ route('fees') }}">Fees</a></li>
 										<li><a href="{{ route('admission_procedure') }}">Admission Procedure</a></li>
-										<li><a href="{{ route('admission_policy') }}">Admission Policies</a></li>
+										<li><a href="{{ route('admission_policy') }}">Admission Policy</a></li>
+										<li><a href="{{ route('online_application') }}">Online Application</a></li>
 										{{-- <li><a href="profile.html">Instructor Profile</a></li>
 										<li><a href="event.html">Upcoming Event</a></li>
 										<li><a href="membership.html">Membership</a></li> --}}
@@ -123,19 +124,17 @@
 						</li>
 						<li class="add-mega-menu @if(in_array(Request::fullUrl(), [
 							route('academics.creche'),
-							route('academics.lower_primary'),
-							route('academics.upper_primary'),
-							route('academics.jhs'),
+							route('academics.primary'),
+							// route('academics.upper_primary'),
+							// route('academics.jhs'),
 							])) active @endif">
 							<a href="javascript:;">Academics <i class="fas fa-chevron-down"></i></a>
 							<ul class="sub-menu add-menu">
 								<li class="add-menu-left">
 									<h5 class="menu-adv-title">Stages of Learning</h5>
 									<ul>
-										<li><a href="{{ route('academics.creche') }}">Creche</a></li>
-										<li><a href="{{ route('academics.lower_primary') }}">Lower Primary</a></li>
-										<li><a href="{{ route('academics.upper_primary') }}">Upper Primary</a></li>
-										<li><a href="{{ route('academics.jhs') }}">J.H.S</a></li>
+										<li><a href="{{ route('academics.creche') }}">Pre-School</a></li>
+										<li><a href="{{ route('academics.primary') }}">Primary</a></li>
 									</ul>
 								</li>
 								<li class="add-menu-right">

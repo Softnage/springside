@@ -12,6 +12,7 @@ class WebsiteFormMail extends Mailable
 	use Queueable, SerializesModels;
 
 	public $msg = '';
+	public $subject = 'Website Form Mail';
 
 	/**
 	* Create a new msg instance.
@@ -20,6 +21,7 @@ class WebsiteFormMail extends Mailable
 	*/
 	public function __construct($params)
 	{
+		$this->subject = array_key_exists('subject', $params) ? $params['subject'] : 'Website Form Mail';
 		$this->msg = $params['message'];
 	}
 
@@ -32,7 +34,7 @@ class WebsiteFormMail extends Mailable
 	{
 		$host = content('app.host');
 		return $this
-		->from("noreply@$host", 'Website Form Mail')
+		->from("noreply@$host", $this->subject)
 		->view('mails.plain');
 	}
 }

@@ -10,7 +10,7 @@
 
 @section('page_content')
 	<div class="page-content">
-		<div class="page-banner ovbl-dark" style="background-image:url(assets/ssa_images_copy/IMG_6115.JPG);">
+		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
 					<h1 class="text-white">Admission Policy</h1>
@@ -35,8 +35,9 @@
 							<div class="heading-bx left">
 								<h2 class="m-b10 title-head"><span>Getting Your Ward</span><br/>Admitted</h2>
 							</div>
-							<p class="m-b10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							<p class="m-b10">
+								Pupils will be expected to undergo medical examination by a medical practitioner approved by the school prior to admission. Pupils will be expected to write entrance examination in English and Mathematics before being considered into upper classes. Currently the school runs from creche to primary.
+							</p>
 						</div>
 						<div class="col-lg-4 col-md-12">
 							@include('includes.contact_banner')

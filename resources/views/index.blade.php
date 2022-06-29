@@ -29,8 +29,11 @@
 						<span class="clr-1">Spring Side Academy</span>
 					</h1>
 					<p>
-						{{ content('app.name') }} cillum summis esse fore quorum quid tempor magna sunt magna anim dolor amet quae
-						illum noster sint tamen fore malis
+						At {{content('app.name')}} we have a deep and genuine commitment to
+						provide a basic education that is unsurpassed anywhere on the
+						continent. We seek to train independent learners in the pursuit of
+						excellence in order to live
+						fulfilling lives whilst creating a better world for others.
 					</p>
 					<div class="home-hero-hol-left-actions">
 						<a href="{{ route('admission_procedure') }}" class="btn btn-primary btn-sm">How to apply</a>
@@ -45,7 +48,7 @@
 
 			</div>
 			<div class="home-hero-hol-right">
-				<img src="https://picsum.photos/300/350" alt="">
+				<img src="{{ asset('images/header-img.png') }}" alt="">
 			</div>
 		</div>
 		</div>
@@ -68,8 +71,11 @@
 								<br />
 								<span class="clr-1">Spring Side Academy</span>
 							</h2>
-							<h5 class="fw4">It is a long established fact that a reade.</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+							<p>
+								Spring Side Academy is a school within the Kumasi catchment area, specifically at Atasomanso. Our thriving school community includes Nursery and Primary classes.
+<br>
+								Our grounds provide great opportunities for outdoor learning, as well as play, sport and family events. Our vision is to foster educational excellence as all pupils prepare to become successful citizens.  We challenge children to achieve their best through...
+							</p>
 							<a href="#" class="btn btn-sm">Read More</a>
 						</div>
 					</div>
@@ -79,10 +85,18 @@
 				<div class="container">
 					<div class="row align-items-center d-flex">
 						<div class="col-lg-5 col-md-12 heading-bx" data-aos='fade-right'>
-							<h2 class="m-b10 font-2">World Class Learning facilities</h2>
-							<h5 class="fw4">It is a long established fact that a reade.</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-							<a href="#" class="btn btn-sm">Read More</a>
+							<h2 class="m-b10 font-2">A Loving Community</h2>
+							{{-- <h5 class="fw4">It is a long established fact that a reade.</h5> --}}
+							<p>
+								Every child is of equal importance and unique. Pupils and
+								members of our community are valued for what they are rather
+								than what they can do and are given every opportunity for
+								educational development to the highest level possible. We are
+								all equal in the sight of God.
+								If you would like to visit our school please contact the school
+								office.
+							</p>
+							{{-- <a href="#" class="btn btn-sm">Read More</a> --}}
 						</div>
 						<div class="col-lg-7 col-md-12 heading-bx p-lr">
 							<div class="video-bx">
@@ -101,10 +115,15 @@
 							</div>
 						</div>
 						<div class="col-lg-5 col-md-12 heading-bx" data-aos='fade-left'>
-							<h2 class="m-b10 font-2">Serene Environment</h2>
-							<h5 class="fw4">It is a long established fact that a reade.</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-							<a href="#" class="btn btn-sm">Read More</a>
+							<h2 class="m-b10 font-2">An Exciting Play-based Learning Environment</h2>
+							{{-- <h5 class="fw4">It is a long established fact that a reade.</h5> --}}
+							<p>
+								At {{ content('app.name') }}, we are keen on creating an
+								exciting play-based learning environment for our kids. We believe
+								that children learn best when they are doing what they enjoy,
+								and since every child loves to play, we learn through games and
+								exciting challenges.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -123,8 +142,9 @@
 							</div>
 							<div class="col-12 col-md-6">
 								<p>
-									Esse enim velit quid tamen amet aute nisi velit quid cillum esse culpa export
-									esse sunt quae esse labore malis esse tempor enim quis quid
+									Get to know more about {{ content('app.name') }}, watch our
+									overview video to get a more visual experience about our
+									activities and standards.
 								</p>
 								<a class='btn btn-sm' href="{{ route('about') }}">Learn More <i class="fas fa-paper-plane"></i></a>
 							</div>
@@ -132,10 +152,17 @@
 					</div>
 					<div class="video-sec-bottom">
 						<div class="video-sec-bottom-hol img-thumbnail">
+							<iframe
+    src="https://www.youtube.com/embed/Pnv1luYE3lU"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+  ></iframe>
+							{{-- <iframe src="https://www.youtube.com/embed/Pnv1luYE3lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
 							{{-- <video id="player" playsinline controls data-poster="/path/to/poster.jpg"> --}}
-							<video id="overview-video" controls>
-								<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
-							</video>
+							{{-- <video controls>
+								<source src="https://www.youtube.com/embed/Pnv1luYE3lU" type="video/mp4" />
+							</video> --}}
 						</div>
 					</div>
 				</div>
@@ -144,7 +171,7 @@
 
 
 			{{-- Academics --}}
-			<div class="section-area section-sp2 popular-courses-bx">
+			{{-- <div class="section-area section-sp2 popular-courses-bx">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 heading-bx left">
@@ -161,7 +188,7 @@
 										<a href="#" class="btn btn-sm">Read More</a>
 									</div>
 									<div class="info-bx text-center">
-										<h5><a href="#">Creche</a></h5>
+										<h5><a href="#">Pre-School</a></h5>
 									</div>
 								</div>
 							</div>
@@ -172,7 +199,7 @@
 										<a href="#" class="btn btn-sm">Read More</a>
 									</div>
 									<div class="info-bx text-center">
-										<h5><a href="#">Lower Primary</a></h5>
+										<h5><a href="#">Primary</a></h5>
 									</div>
 								</div>
 							</div>
@@ -201,7 +228,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			{{-- Academics END --}}
 
 			{{-- Extra Curricula --}}
@@ -212,10 +239,10 @@
 						<div class="item card ec-activity">
 							<img class="card-img-top" src="{{ asset('images/slide-sec-1.jpg') }}" alt="" />
 							<div class="card-body">
-								<h5>Lorem Ipsum Dolor</h5>
+								<h5>An Educational System You Can Trust</h5>
 								<p>
-									Fugiat sunt quid illum amet nisi fore quid minim elit minim illum minim sunt
-									esse noster legam tamen anim nulla
+									We provide high quality childhood educational and family
+									focused programs that inspire children, strenghthen families, and embrace communities
 								</p>
 							</div>
 						</div>
@@ -223,10 +250,11 @@
 						<div class="item card ec-activity">
 							<img class="card-img-top" src="{{ asset('images/slide-sec-2.jpg') }}" alt="" />
 							<div class="card-body">
-								<h5>Lorem Ipsum Dolor</h5>
+								<h5>An Engaging Playground</h5>
 								<p>
-									Fugiat sunt quid illum amet nisi fore quid minim elit minim illum minim sunt
-									esse noster legam tamen anim nulla
+									We provide environment where your child will be actively
+									involved in many new learning experiences & enrichment
+									opportunities.
 								</p>
 							</div>
 						</div>
@@ -269,19 +297,21 @@
 						<img src="{{ asset('images/office-pin.png') }}" alt="" class="office-pin">
 						<div>
 							<h3>
-								Education is a <span>Journey</span>
-								<br />
-								not a <span>Race</span></h3>
+								Educating the <span>Hand</span>, <span>Heart</span> and <span>Mind</span>.
 								<p>
-									Fugiat velit aute esse nisi legam illum enim minim esse ipsum aliqua cillum
-									minim nisi culpa tamen magna anim fore anim cillum summis legam quorum amet
-									quorum aliqua quorum nulla
+									The function of education is to teach one to think intensively
+									and to think critically. The most dangerous criminal may be the man gifted with reason,
+									but with no morals.
+									<br>
+									Intelligence plus character; that is
+									the goal of true education. This is the focus of education
+									here at {{ content('app.name') }}.
 								</p>
-								<p>
+								{{-- <p>
 									Tamen sunt irure cillum summis amet elit fore illum esse irure labore multos
 									export eram quid aute velit cillum veniam labore malis labore enim veniam eram
 									enim irure aute multos
-								</p>
+								</p> --}}
 							</div>
 						</div>
 					</div>

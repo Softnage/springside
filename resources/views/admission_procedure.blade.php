@@ -2,7 +2,8 @@
 
 @section('page_head')
 	{!! seo([
-		'title' => "Admission Procedure | " . content('app.name')
+		'title' => "Admission Procedure | " . content('app.name'),
+		'description' => "Processes each student must go through before being granted admission at ".content('app.name')
 		]) !!}
 
 	<link rel="stylesheet" href="{{ asset('css/about.css') }}">
@@ -10,7 +11,7 @@
 
 @section('page_content')
 	<div class="page-content">
-		<div class="page-banner ovbl-dark" style="background-image:url(assets/ssa_images_copy/IMG_6115.JPG);">
+		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
 					<h1 class="text-white">Admission Procedure</h1>
@@ -35,9 +36,35 @@
 							<div class="heading-bx left">
 								<h2 class="m-b10 title-head"><span>How To</span> Apply</h2>
 							</div>
-							<p class="m-b10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-							<div class="ttr-accordion m-b30 faq-bx" id="accordion1">
+							<p class="m-b10">
+								To get your child admitted at {{ content('app.name') }}, you must
+								follow the simple steps below to ensure they are granted admission.
+							</p>
+							<p>
+								<i>
+								Note that without completing each step listed below, your child will be
+								at a disadvantage when being considered for admission.
+							</i>
+							</p>
+
+								<p style="font-size:14px;">
+									1. Pick an admission form at GHS20.00 from the school's front desk.
+								</p>
+								<p style="font-size:14px;">
+									2. A date will be set for writing an entrance exam. Your ward is
+									expected to get not less than 50% of the total marks allocated
+									for the entrance exam.
+								</p>
+								<p style="font-size:14px;">
+									3. If your ward is offered admission, you will be presented with
+									an admission list based on your child's age/class.
+								</p>
+								<p style="font-size:14px;">
+									4. The admission process is not yet completed until all admission
+									fees are paid in full.
+								</p>
+
+							{{-- <div class="ttr-accordion m-b30 faq-bx" id="accordion1">
 								<div class="panel">
 									<div class="acod-head">
 										<h6 class="acod-title">
@@ -98,9 +125,7 @@
 										<div class="acod-content">Developement aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
 									</div>
 								</div>
-							</div>
-							<p class="m-b10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div> --}}
 						</div>
 						<div class="col-lg-4 col-md-12">
 							@include('includes.contact_banner')

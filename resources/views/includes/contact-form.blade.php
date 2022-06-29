@@ -3,7 +3,9 @@
 	<div class="ajax-message"></div>
 	<div class="heading-bx left">
 		<h2 class="title-head">Get In <span>Touch</span></h2>
-		<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+		<p>
+			Fill the form below to send us an email. We shall reply as soon as possible.
+		</p>
 	</div>
 	<div class="row placeani">
 		<div class="col-lg-6">

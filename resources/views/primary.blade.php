@@ -2,7 +2,7 @@
 
 @section('page_head')
 	{!! seo([
-		'title' => "Pre-School | " . content('app.name')
+		'title' => "Primary | " . content('app.name')
 		]) !!}
 
 	{{-- <link href="https://unpkg.com/pattern.css" rel="stylesheet" /> --}}
@@ -14,7 +14,7 @@
 		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
-					<h1 class="text-white">Pre-School</h1>
+					<h1 class="text-white">Primary</h1>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 				<ul class="list-inline">
 					<li><a href="{{ route('home') }}">Home</a></li>
 					<li>Academics</li>
-					<li>Pre-School</li>
+					<li>Primary</li>
 				</ul>
 			</div>
 		</div>
@@ -35,38 +35,42 @@
 					<div class="row">
 						<div class="col-lg-8 col-md-12">
 							<div class="heading-bx left">
-								<h2 class="font-2 m-b10 title-head">Nurturing Infant Minds</h2>
+								<h2 class="font-2 m-b10 title-head">Interactive Learning</h2>
 							</div>
 							<p class="m-b10">
-								Our pre-school setup accomodates children between the ages of 3 to 5.
-								Based on your child's level of rigor, he or she may be placed within
-								our early years nursery or kindergarten. If your child needs diaper
-								changes and support for toilet training, they are placed within our nursery.
-								However, if your child shows a significant level of independence and
-								readiness for more rigor, they are placed within our kindergarten.
+								We inculcate in pupils ways to adjust to change, cope with
+								uncertainty as an opportunity to excel. Teaching and learning
+								activities in primary are supervised by classroom teachers with
+								proven track record and experience. The staff through awareness
+								of each child's needs aim to create an atmosphere which
+								encourages self-discipline and control. Through their humanity,
+								it is nurtured and inculcated in pupils.
 							</p>
-							<p>
-								Our trained teachers offer special care to pupils regardless of level.
-								Subject being taught at the pre-school level include the following:
-							</p>
+
+
 
 							<div>
 								<table class="table table-bordered text-center">
 									<tbody>
 										<tr>
-											<td>Scribbling</td>
-											<td>Phonics</td>
+											<td>English</td>
+											<td>Mathematics</td>
 										</tr>
 										<tr>
-											<td>Numeracy</td>
-											<td>Discovery</td>
+											<td>Religious and Moral Education</td>
+											<td>Citizenship</td>
 										</tr>
 										<tr>
-											<td>Art and Creativity</td>
-											<td>Colouring</td>
+											<td>French</td>
+											<td>Physical Education</td>
 										</tr>
 										<tr>
-											<td>Language and Literacy</td>
+											<td>Creative Arts</td>
+											<td>Asante Twi</td>
+										</tr>
+										<tr>
+											<td>Natural Science</td>
+											<td>Information, Communication and Technology</td>
 										</tr>
 									</tbody>
 								</table>
@@ -74,9 +78,10 @@
 
 						</div>
 						<div class="col-lg-4 col-md-12">
-							<img src="{{ asset('images/creche.jpg') }}" alt="Pre-School | {{ content('app.name') }}" style="width:100%; margin:20px 0;" />
+							<img src="{{ asset('images/primary1.jpg') }}" alt="Primary - {{ content('app.name') }}" style="margin-bottom:20px;" />
 							@include('includes.contact-form')
 						</div>
+
 					</div>
 				</div>
 				<!-- Your Faq End -->

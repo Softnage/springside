@@ -11,7 +11,7 @@
 
 @section('page_content')
 	<div class="page-content">
-		<div class="page-banner ovbl-dark" style="background-image:url(assets/ssa_images_copy/IMG_6115.JPG);">
+		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
 					<h1 class="text-white">Teaching and Learning</h1>
@@ -22,7 +22,7 @@
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="{{ route('home') }}">Home</a></li>
-					<li>Our School System</li>
+					<li>Our School Setup</li>
 					<li>Teaching and Learning</li>
 				</ul>
 			</div>
@@ -39,35 +39,20 @@
 									Learning Through Integrated Units of Inquiry
 								</h2>
 							</div>
-							<p class="m-b10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							<p class="m-b10">
+								We believe that students achievements and successes should be
+								recognised and celebrated. By marking the achievements of our
+								students, we hope to instill a sense of confidence and pride that
+								will follow them through their educational adventure, whilst
+								inspiring those around them.
+							</p>
 
-							<div>
-								<table class="table table-bordered text-center">
-									<tbody>
-										<tr>
-											<td>Colouring</td>
-											<td>Erasing</td>
-										</tr>
-										<tr>
-											<td>Colouring</td>
-											<td>Erasing</td>
-										</tr>
-										<tr>
-											<td>Colouring</td>
-											<td>Erasing</td>
-										</tr>
-										<tr>
-											<td>Colouring</td>
-											<td>Erasing</td>
-										</tr>
-										<tr>
-											<td>Colouring</td>
-											<td>Erasing</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+							<p>
+								Class teachers endeavour to write report on each child on how he/she
+								fared for the particular term. Grading for subjects comprises 50%
+								of scores for class test organized during the term and 50% scores
+								also for end of term examinations.
+							</p>
 
 						</div>
 						<div class="col-12 col-lg-4 teaching-intro-right">
@@ -91,47 +76,8 @@
 						</div>
 
 
-						<div class="col-12">
-							<div class="heading-bx left" style="margin-top:20px;">
-								<h2 class="title-head"><span>Also In This</span> Section</h2>
-							</div>
-
-							<div class="row" style="margin-bottom:30px;">
-								<div class="col-12 col-md-3">
-									<div class="card" style="margin-bottom:15px;">
-										<a href="{{ route('academics.lower_primary') }}">
-											<img class="card-img-top" src="{{ asset('images/academics/lower-primary-600-350.jpg') }}" alt="" />
-										</a>
-										<div class="card-body">
-											<h5>
-												<a href="{{ route('academics.lower_primary') }}">
-													Lower Primary
-												</a>
-											</h5>
-											<p style="font-size:14px; margin:0;">
-												Fugiat sunt quid illum amet nisi fore quid minim elit minim illum minim sunt
-												esse noster legam tamen anim nulla
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-3">
-									<div class="card" style="margin-bottom:15px;">
-										<img class="card-img-top" src="{{ asset('images/academics/upper-primary-600-350.jpg') }}" alt="" />
-										<div class="card-body">
-											<h5>Upper Primary</h5>
-											<p style="font-size:14px; margin:0;">
-												Fugiat sunt quid illum amet nisi fore quid minim elit minim illum minim sunt
-												esse noster legam tamen anim nulla
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
+						<div class="col-12" style="margin-top:50px;">
 							@include('includes.contact-form')
-
-
 						</div>
 
 					</div>

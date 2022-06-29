@@ -11,7 +11,7 @@
 
 @section('page_content')
 	<div class="page-content">
-		<div class="page-banner ovbl-dark" style="background-image:url(assets/ssa_images_copy/IMG_6115.JPG);">
+		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
 					<h1 class="text-white">Upper Primary</h1>
@@ -81,13 +81,13 @@
 							</div>
 
 							<div class="card" style="margin-bottom:15px;">
-								<a href="{{ route('academics.lower_primary') }}">
-									<img class="card-img-top" src="{{ asset('images/academics/lower-primary-600-350.jpg') }}" alt="" />
+								<a href="{{ route('academics.primary') }}">
+									<img class="card-img-top" src="{{ asset('images/academics/primary-600-350.jpg') }}" alt="" />
 								</a>
 								<div class="card-body">
 									<h5>
-										<a href="{{ route('academics.lower_primary') }}">
-											Lower Primary
+										<a href="{{ route('academics.primary') }}">
+											Primary
 										</a>
 									</h5>
 									<p style="font-size:14px; margin:0;">
