@@ -2,8 +2,8 @@
 
 @section('page_head')
 	{!! seo([
-		'title' => "Extra Curricular Activities | " . content('app.name'),
-		'description' => 'Our pupils engage in extracurricular activities which help to unearth their hidden talents and skills'
+		'title' => "Co-Curricular Activities | " . content('app.name'),
+		'description' => 'Our pupils engage in co-curricular activities which help to unearth their hidden talents and skills'
 		]) !!}
 
 	<link href="https://unpkg.com/pattern.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
 		<div class="page-banner ovbl-dark" style="background-image:url();">
 			<div class="container">
 				<div class="page-banner-entry">
-					<h1 class="text-white">Extra Curricular Activities</h1>
+					<h1 class="text-white">Co-Curricular Activities</h1>
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 				<ul class="list-inline">
 					<li><a href="{{ route('home') }}">Home</a></li>
 					<li>Our School Setup</li>
-					<li>Extra Curricular Activities</li>
+					<li>Co-Curricular Activities</li>
 				</ul>
 			</div>
 		</div>
@@ -38,24 +38,40 @@
 							<div class="heading-bx left">
 								<h2 class="font-2 m-b10 title-head">Fun-Filled Learning</h2>
 							</div>
+							
 							<p class="m-b10">
-								{{ content('app.name') }} is keen on various activities that
-								compliment formal teaching and learning. Activities such as
-								excursions, sports, quizzes, dance and swimming lessons are
-								given the needed attention.
-							</p>
-							<p class="m-b10">
-								Studies have shown that extra-curricular activities reduce the
+								Studies have shown that co-curricular activities reduce the
 								likelihood of dropping out of school, likelihood of commiting
 								a criminal offense and leads to higher educational retainment and
 								success in school work, not to mention the greatest advantage of
 								decreasing anti-social behaviours.
 							</p>
-
-							<p>
-								{{ content('app.name') }} organizes educational excursions, medical
-								screening at least once a term and swimming lessons twice a term.
+							<p class="m-b10">
+								Spring Side Academy  is keen on various activities that
+								compliment formal teaching and learning. A snippet of which includes;
+							
 							</p>
+							<ul>
+								<li>Swimming</li>
+								<li>Dancing</li>
+								<li>Field Trips</li>
+								<li>Medical Screenings</li>
+								<li>Family Events</li>
+								<li>Project Work Presentations</li>
+							</ul>
+							<p class="m-b10">
+								Spring Side Academy also provides its precious students with the 
+								luxury of joining and participating in numerous club activities. A handful of the 
+								clubs present on our campus are: 
+							</p>
+							<ul>
+								<li>Reading & Spelling Club</li>
+								<li>Drama Club</li>
+								<li>Creative Arts Club</li>
+								<li>Music Club</li>
+								<li>Choreography Club</li>
+								<li>Cultural Dance Club</li>
+							</ul>
 						</div>
 
 						<div class="col-12 col-lg-4" style="margin-top:20px;">
