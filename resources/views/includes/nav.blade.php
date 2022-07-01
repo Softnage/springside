@@ -153,7 +153,7 @@
 								<li><a href="{{ route('setup.calendar') }}">Term Dates</a></li>
 								<li><a href="{{ route('setup.curriculum') }}">Curriculum</a></li>
 								<li><a href="{{ route('setup.teaching') }}">Teaching and Learning</a></li>
-								<li><a href="{{ route('setup.extra_curricula') }}">Extra Curricula Activities</a></li>
+								<li><a href="{{ route('setup.extra_curricula') }}">Co-Curricula Activities</a></li>
 							</ul>
 						</li>
 						<li class="@if (Request::is('contact')) active @endif">

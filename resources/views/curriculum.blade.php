@@ -49,42 +49,46 @@
 								<table class="table table-bordered text-center">
 									<tbody>
 										<tr>
-											<td>Scribbling</td>
-											<td>Phonics</td>
+											<td>Writing</td>
+											<td>Dictation</td>
 										</tr>
 										<tr>
+											<td>Mental Arithmetic System</td>
+											<td>Science</td>
+										</tr>
+										<tr>
+											<td>Religious & Moral Education</td>
+											<td>Physical Education</td>
+										</tr>
+										<tr>
+											<td>Phonics</td>
+											<td>Painting</td>
+										</tr>
+										<tr>
+											<td>Our World, Our People</td>
 											<td>Numeracy</td>
+										</tr>
+
+
+										<tr>
+											<td>Mathermatics</td>
+											<td>Language & Literacy</td>
+										</tr>
+										<tr>
+											<td>History</td>
+											<td>French Language</td>
+										</tr>
+										<tr>
+											<td>English Language</td>
 											<td>Discovery</td>
 										</tr>
 										<tr>
-											<td>Art and Creativity</td>
-											<td>Colouring</td>
-										</tr>
-										<tr>
-											<td>English/Reading</td>
-											<td>Language and Literacy</td>
-										</tr>
-										<tr>
-											<td>Mathematics</td>
-											<td>Religious and Moral Education</td>
-										</tr>
-
-
-										<tr>
-											<td>Environmental Studies</td>
-											<td>French</td>
-										</tr>
-										<tr>
-											<td>Physical Education</td>
-											<td>Natural Science</td>
+											<td>Creative Arts</td>
+											<td>Coloring</td>
 										</tr>
 										<tr>
 											<td>Asante Twi</td>
-											<td>Creative Arts</td>
-										</tr>
-										<tr>
-											<td>Information, Communication and Technology</td>
-											<td>Citizenship</td>
+											<td>Arts & Creativity</td>
 										</tr>
 									</tbody>
 								</table>

@@ -38,7 +38,7 @@ if(!function_exists('content')) {
 					],
 				],
 				'web_contact_email' => 'ssa.amidarr@gmail.com',
-				'location' => 'Paraku Estate, Atasemanso',
+				'location' => 'Atasemanso',
 				'admissions_phone' => '0271017170',
 				'primary_phone' => '0271017170',
 				'secondary_phone' => ' 0204864000',
