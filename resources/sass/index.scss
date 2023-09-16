@@ -6,7 +6,7 @@
 .home-extra-curricula {
 	display: flex;
 
-	> div {
+	>div {
 		padding: 2px;
 		overflow: hidden;
 
@@ -83,7 +83,7 @@
 	position: relative;
 
 	.img-hol {
-		color: rgba(0,12,102,1);
+		color: rgba(0, 12, 102, 1);
 		position: absolute;
 		top: -60px;
 		left: 0;
@@ -103,11 +103,11 @@
 	}
 
 	&-right {
-		background: rgb(19,85,151);
-	background: -moz-linear-gradient(180deg, rgba(19,85,151,1) 0%, rgba(19,85,151,1) 0%, rgba(5,5,51,1) 90%);
-	background: -webkit-linear-gradient(180deg, rgba(19,85,151,1) 0%, rgba(19,85,151,1) 0%, rgba(5,5,51,1) 90%);
-	background: linear-gradient(180deg, rgba(19,85,151,1) 0%, rgba(19,85,151,1) 0%, rgba(5,5,51,1) 90%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#135597",endColorstr="#050533",GradientType=1);
+		background: rgb(19, 85, 151);
+		background: -moz-linear-gradient(180deg, rgba(19, 85, 151, 1) 0%, rgba(19, 85, 151, 1) 0%, rgba(5, 5, 51, 1) 90%);
+		background: -webkit-linear-gradient(180deg, rgba(19, 85, 151, 1) 0%, rgba(19, 85, 151, 1) 0%, rgba(5, 5, 51, 1) 90%);
+		background: linear-gradient(180deg, rgba(19, 85, 151, 1) 0%, rgba(19, 85, 151, 1) 0%, rgba(5, 5, 51, 1) 90%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#135597", endColorstr="#050533", GradientType=1);
 
 		flex-basis: 70%;
 		display: flex;
@@ -116,7 +116,7 @@
 		position: relative;
 		padding: 50px 0 50px 150px;
 
-		> div {
+		>div {
 			max-width: 80%;
 		}
 
@@ -148,7 +148,9 @@
 	}
 
 	@media($tablet) {
-		&-left, .img-hol {
+
+		&-left,
+		.img-hol {
 			display: none;
 		}
 
@@ -156,7 +158,7 @@
 			flex-basis: 100%;
 			padding: 50px 15px;
 
-			> div {
+			>div {
 				max-width: unset;
 				width: 100%;
 			}
@@ -177,7 +179,8 @@
 		align-items: flex-end;
 		// min-height: min(700px, 80vh);
 
-		&-left, &-right {
+		&-left,
+		&-right {
 			display: flex;
 			height: 100%;
 			padding-top: 50px;
@@ -219,9 +222,7 @@
 						font-size: 8px;
 					}
 
-					&::after {
-
-					}
+				
 				}
 			}
 		}
@@ -272,6 +273,7 @@
 	0% {
 		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
 	}
+
 	100% {
 		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
 	}
@@ -318,7 +320,8 @@
 			bottom: -80px;
 			width: min(800px, 100%);
 
-			iframe, video {
+			iframe,
+			video {
 				object-fit: contain;
 				width: 100%;
 				min-height: 400px;
