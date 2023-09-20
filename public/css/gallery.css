@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-page {
+    color: #fff;
+    height: 40vh;
+
+    background: linear-gradient(45deg, #100018 0%, #26006c 50%, #110038 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-page h1 {
+    font-size: 45px;
+}
+
+.photo-gallery-heading span {
+    color: #135597;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 5%;
+}
+
+.photo {
+    margin: auto !important;
+    width: 95%;
+}
+
+.photo img {
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.v-heading {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.v-heading h1 {
+    font-size: 45px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+}
+.video video {
+    margin-top: 30px;
+    width: 95%;
+}
+
+@media screen and (max-width: 767px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}

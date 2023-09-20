@@ -92,6 +92,9 @@ Route::prefix('academics')->group(function() {
 			return view('contact');
 		});
 
+		Route::name('gallery')->get('/gallery', function() {
+			return view('gallery');
+		});
 
 		// just gonna leave this here instead of api.php
 		// just so it doesn't get too lonely or forgotten
