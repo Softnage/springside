@@ -341,14 +341,21 @@
         <div class="video-grid">
             <div class="video">
                 <video controls>
-                    <source src="your-video.mp4" type="video/mp4" />
+                    <source src="{{ asset('videos/springside1.mp4') }}" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
 
             <div class="video">
                 <video controls>
-                    <source src="your-video.mp4" type="video/mp4" />
+                    <source src="{{ asset('videos/springside2.mp4') }}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video">
+                <video controls>
+                    <source src="{{ asset('videos/springside3.mp4') }}" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
