@@ -17,10 +17,10 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="{{ asset('images/springside-hero.jpg') }}" alt="">
+                    <img src="{{ asset('images/Springside-hero.jpg') }}" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{ asset('images/springside-hero-2.jpg') }}" alt="">
+                    <img src="{{ asset('images/Springside-here-2.jpg') }}" alt="">
                 </div>
             </div>
         </div>
